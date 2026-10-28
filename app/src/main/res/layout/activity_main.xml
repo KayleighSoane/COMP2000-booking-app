@@ -74,4 +74,12 @@
 
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:text="Testing git push"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="584dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
