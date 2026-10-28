@@ -78,7 +78,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="103dp"
-        android:text="Testing git push"
+        android:text="Testing git push again"
         tools:layout_editor_absoluteX="-1dp"
         tools:layout_editor_absoluteY="584dp" />
 
