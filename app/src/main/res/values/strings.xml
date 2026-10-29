@@ -4,4 +4,12 @@
     <string name="tab_rooms">Rooms</string>
     <string name="tab_bookings">Bookings</string>
     <string name="tab_account">Account</string>
+    <string name="room_header">Room %d</string>
+    <string name="room_description">%s</string>
+    <string name="room_capacity">Capacity: %d</string>
+    <string name="room_includes">Includes: %s</string>
+    <string name="filter">%s</string>
+    <string name="date">%s</string>
+    <!-- writing strings to include %s and %d means they can be used multiple times for each room.
+    variables can be parsed in to customize it for each room -->
 </resources>

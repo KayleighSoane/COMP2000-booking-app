@@ -35,6 +35,7 @@ android {
 dependencies {
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
+    implementation(libs.cardview.v7)
     implementation(libs.constraintlayout)
     implementation(libs.material)
     testImplementation(libs.junit)
