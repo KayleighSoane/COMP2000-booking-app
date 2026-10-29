@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BookingApp</string>
+    <string name="all_rooms">All Rooms</string>
+    <string name="tab_rooms">Rooms</string>
+    <string name="tab_bookings">Bookings</string>
+    <string name="tab_account">Account</string>
 </resources>
