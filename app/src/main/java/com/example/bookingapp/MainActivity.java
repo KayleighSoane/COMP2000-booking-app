@@ -1,6 +1,8 @@
 package com.example.bookingapp;
 
 import android.os.Bundle;
+import android.content.Intent;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button btnLogIn = findViewById(R.id.button); // go to RoomMain when button is pressed
+        btnLogIn.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, RoomMain.class);
+            startActivity(intent);
+            finish();
+        });
+
     }
 }
+

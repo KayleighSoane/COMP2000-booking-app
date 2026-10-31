@@ -49,6 +49,9 @@ all rooms will be generated from the template -->
             android:layout_marginHorizontal="10dp"
             android:orientation="vertical">
 
+        <!-- Rooms will be dynamically allocated since they will each have their own data.
+        For prototype, are hardcoded
+        Same applies for room names and descriptions - will be dynamically allocated using strings.xml-->
             <!-- Card 1 -->
             <com.google.android.material.card.MaterialCardView
                 android:layout_width="match_parent"
@@ -81,7 +84,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 1"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -90,7 +93,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Meeting Room\nCapacity: 4"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -128,7 +131,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 2"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -137,7 +140,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Meeting Room\nCapacity: 6"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -175,7 +178,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 3"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -184,7 +187,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Meeting Room\nCapacity: 8"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -222,7 +225,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 4"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -231,7 +234,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Meeting Room\nCapacity: 10"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -269,7 +272,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 5"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -278,7 +281,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Meeting Room\nCapacity: 12"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -316,7 +319,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 6"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -325,7 +328,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Seminar Room\nCapacity: 25"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -363,7 +366,7 @@ all rooms will be generated from the template -->
                             android:id="@+id/titleRoom7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="@string/room_header"
+                            android:text="Room 7"
                             android:textSize="20sp"
                             android:textStyle="bold" />
 
@@ -372,7 +375,7 @@ all rooms will be generated from the template -->
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="4dp"
-                            android:text="@string/room_capacity"
+                            android:text="Seminar Room\nCapacity: 40"
                             android:textSize="14sp" />
                     </LinearLayout>
                 </LinearLayout>

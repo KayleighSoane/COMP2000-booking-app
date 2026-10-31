@@ -22,9 +22,27 @@
             </intent-filter>
         </activity>
 
-        <!-- insert other activities for other pages here
-        <activity > </activity> -->
+        <activity android:name=".RoomMain" android:screenOrientation="portrait" />
+        <activity android:name=".RoomTemplate" android:screenOrientation="portrait" />
+        <activity android:name=".RoomDateEmployee" android:screenOrientation="portrait" />
+        <activity android:name=".MyBookings" android:screenOrientation="portrait" />
+        <activity android:name=".ViewBooking" android:screenOrientation="portrait" />
+
 
     </application>
 
 </manifest>
+
+<!-- prototype for assignment 1:
+    Employees view only
+    All screens required to complete the tasks but don't actually need to complete the tasks
+    Don't need profile page?
+    UI and navigation between pages only - no backend just java and xml
+    Can hardcode some stuff that requires database just for prototype
+    HCI principles - accessibility screen reader text
+    Nav needs to be functioning
+    Room cards in RoomMain need to be functioning (all can point to one example room for prototype?)
+    Calendar in RoomTemplate needs to be functioning to see RoomDate (all dates point to one?)
+    Bookings in MyBookings need to be functional to access ViewBooking (all point to one?)
+    Can make booking and cancel bottom sheets but might not be functional until database created
+-->

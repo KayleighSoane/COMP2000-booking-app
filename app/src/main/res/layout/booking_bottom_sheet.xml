@@ -5,10 +5,14 @@
     android:id="@+id/bottomConfirmPanel"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="24dp"
     app:cardElevation="12dp"
     app:strokeColor="@color/grey"
-    app:strokeWidth="1dp">
+    app:strokeWidth="1dp"
+    app:shapeAppearanceOverlay="@style/ShapeAppearance.BottomSheet"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="100dp"> <!-- behaviour attributes make the sheet able to be
+    stretched and minimized -->
 
     <LinearLayout
         android:layout_width="match_parent"
