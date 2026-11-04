@@ -36,59 +36,61 @@
             android:layout_marginBottom="50dp"
             android:gravity="center_horizontal"
             android:text="Summary"
-            android:textSize="20sp"
+            android:textSize="21sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/tvRoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0 Slots Selected"
+            android:layout_marginBottom="20dp"
+            android:text="Room"
             android:textColor="?attr/colorOnSurface"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="20dp"/>
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:text="Date"
-            android:textSize="16sp"
-            android:layout_marginBottom="5dp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView9"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:text="time / booking length"
-            android:textSize="16sp"
-            android:layout_marginBottom="15dp"/>
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/textView13"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Reason for booking:"
-            android:textSize="18sp" />
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
         <EditText
             android:id="@+id/editTextText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="50dp"
             android:ems="10"
             android:hint="Type here"
             android:inputType="text"
-            android:minHeight="48dp" />
+            android:minHeight="48dp"
+            android:textSize="18sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btnCancelSheet"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="16dp"
-            android:text="Confirm Booking"
-            android:textSize="16sp"
+            android:text="Request Booking"
+            android:textSize="18sp"
             app:cornerRadius="12dp" />
 
     </LinearLayout>
