@@ -40,9 +40,13 @@
     UI and navigation between pages only - no backend just java and xml
     Can hardcode some stuff that requires database just for prototype
     HCI principles - accessibility screen reader text
-    Nav needs to be functioning
-    Room cards in RoomMain need to be functioning (all can point to one example room for prototype?)
-    Calendar in RoomTemplate needs to be functioning to see RoomDate (all dates point to one?)
+    Nav needs to be functioning DONE
+    Room cards in RoomMain need to be functioning DONE
+    Calendar in RoomTemplate needs to be functioning to see RoomDate DONE
+
+
     Bookings in MyBookings need to be functional to access ViewBooking (all point to one?)
+    - create prototype/false booking just to be able to access ViewBooking
+
     Can make booking and cancel bottom sheets but might not be functional until database created
 -->

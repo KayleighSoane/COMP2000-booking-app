@@ -14,6 +14,7 @@
     app:behavior_peekHeight="100dp"> <!-- behaviour attributes make the sheet able to be
     stretched and minimized -->
 
+    <!-- this bottomsheet is not yet implemented -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,14 +33,14 @@
             android:id="@+id/textView12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
             android:gravity="center_horizontal"
             android:text="Summary"
             android:textSize="20sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="50dp"/>
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvSelectedSummary"
+            android:id="@+id/tvRoom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0 Slots Selected"
@@ -82,7 +83,7 @@
             android:minHeight="48dp" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnConfirmBooking"
+            android:id="@+id/btnCancelSheet"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="16dp"

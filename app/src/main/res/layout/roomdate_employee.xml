@@ -17,7 +17,6 @@
         android:gravity="center_horizontal"
         android:padding="16dp"
         android:text="@string/room_header"
-        android:textColor="@color/black"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,101 +37,104 @@
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/navDivider4"
         app:layout_constraintTop_toBottomOf="@id/headerDivider3">
 
-        <LinearLayout
+        <ImageButton
+            android:id="@+id/backbut"
+            android:layout_width="60dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:background="#74FFFFFF"
+            android:contentDescription="Back button"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            app:tint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="?attr/homeAsUpIndicator" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toBottomOf="@+id/backbut"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+        <TextView
+            android:id="@+id/tvSelectedDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="@string/date"
+            android:textSize="22sp"
+            android:textStyle="bold" />
 
-            <ImageButton
-                android:id="@+id/imageButton5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:contentDescription="Previous date"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:rotation="90"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/m3_split_button_chevron_avd" />
-
-            <TextView
-                android:id="@+id/tvSelectedDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="@string/date"
-                android:textColor="?attr/colorOnSurface"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/white"
-                android:contentDescription="Next date"
-                android:minWidth="48dp"
-                android:minHeight="48dp"
-                android:rotation="270"
-                android:scaleType="fitCenter"
-                app:srcCompat="@drawable/m3_split_button_chevron_avd" />
-        </LinearLayout>
-
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/vacantSlots"
+        <ScrollView
+            android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            app:singleSelection="false"> <!-- allow to select multiple slots -->
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:scrollbars="none"> <!-- hide scroll bar -->
 
-            <com.google.android.material.chip.Chip
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/vacantSlots"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="09:00 - 09:15"
-                android:textSize="20sp" />
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                app:singleSelection="false"> <!-- allow to select multiple slots -->
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="09:15 - 10:15"
-                android:textSize="20sp" />
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="09:00 - 09:15"
+                    android:textSize="20sp" />
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="10:15 - 10:30"
-                android:textSize="20sp" />
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="09:15 - 10:15"
+                    android:textSize="20sp" />
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="10:30 - 10:45"
-                android:textSize="20sp" />
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="10:15 - 10:30"
+                    android:textSize="20sp" />
 
-            <com.google.android.material.chip.Chip
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="16dp"
-                android:text="10:45 - 11:00"
-                android:textSize="20sp" />
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="10:30 - 10:45"
+                    android:textSize="20sp" />
 
-        </com.google.android.material.chip.ChipGroup>
+                <com.google.android.material.chip.Chip
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="10:45 - 11:00"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </ScrollView>
 
     </LinearLayout>
 
     <include
         android:id="@+id/booking_bottom_sheet"
-        layout="@layout/booking_bottom_sheet"
+        layout="@layout/booking_bottomsheet"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/bottomNavigationView"

@@ -2,6 +2,9 @@ plugins {
     alias(libs.plugins.android.application)
 }
 
+// Redirect build directory outside OneDrive to eliminate Windows file locking issues
+layout.buildDirectory.set(file("C:/tmp/BookingApp/app/build"))
+
 android {
     namespace = "com.example.bookingapp"
     compileSdk {
@@ -35,7 +38,7 @@ android {
 dependencies {
     implementation(libs.activity.ktx)
     implementation(libs.appcompat)
-    implementation(libs.cardview.v7)
+    implementation(libs.cardview)
     implementation(libs.constraintlayout)
     implementation(libs.material)
     implementation(libs.recyclerview)
