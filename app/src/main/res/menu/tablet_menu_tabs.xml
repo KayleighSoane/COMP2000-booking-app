@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        android:title="@string/tab_account" />
+
+    <item
+        android:id="@+id/bookings"
+        android:icon="@drawable/ic_booking"
+        android:title="@string/tab_bookings" />
+    <item
+        android:id="@+id/rooms"
+        android:icon="@drawable/ic_room"
+        android:title="@string/tab_rooms" />
+
+</menu>

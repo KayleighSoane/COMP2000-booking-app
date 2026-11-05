@@ -2,19 +2,22 @@ package com.example.bookingapp;
 
 import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import com.google.android.material.navigation.NavigationBarView;
+import com.google.android.material.navigation.NavigationView;
 
 public class NavigationHelper {
 
     public static void setupBottomNav(AppCompatActivity activity, int currentTabId) {
-        BottomNavigationView bottomNav = activity.findViewById(R.id.bottomNavigationView);
-        if (bottomNav == null) return;
+        NavigationBarView nav = activity.findViewById(R.id.bottomNavigationView);
+        if (nav == null) { nav = activity.findViewById(R.id.navigationRailView); }
+        if (nav == null) { return; }
 
         // Highlight current tab icon
-        bottomNav.setSelectedItemId(currentTabId);
+        nav.setSelectedItemId(currentTabId);
 
         // Handle navigation clicks
-        bottomNav.setOnItemSelectedListener(item -> {
+        nav.setOnItemSelectedListener(item -> {
             int id = item.getItemId();
 
             if (id == R.id.rooms) { // if click on room icon

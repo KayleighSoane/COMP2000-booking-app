@@ -34,14 +34,18 @@
 <!-- will change hardcoded cards to a recyclerview template once i have a database
 all rooms will be generated from the template -->
 
+    <!-- Bottom nav bar -->
     <ScrollView
         android:id="@+id/scrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:padding="6dp"
         app:layout_constraintBottom_toTopOf="@id/navDivider"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerDivider">
+        app:layout_constraintTop_toBottomOf="@id/headerDivider"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -49,7 +53,7 @@ all rooms will be generated from the template -->
             android:layout_marginHorizontal="10dp"
             android:orientation="vertical">
 
-        <!-- Rooms will be dynamically allocated since they will each have their own data.
+            <!-- Rooms will be dynamically allocated since they will each have their own data.
         For prototype, are hardcoded
         Same applies for room names and descriptions - will be dynamically allocated using strings.xml-->
             <!-- Card 1 -->
@@ -59,9 +63,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -107,9 +111,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -155,9 +159,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -203,9 +207,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -251,9 +255,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -299,9 +303,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -347,9 +351,9 @@ all rooms will be generated from the template -->
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 app:cardCornerRadius="16dp"
-                app:strokeWidth="1dp"
+                app:cardElevation="0dp"
                 app:strokeColor="@color/grey"
-                app:cardElevation="0dp">
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -391,7 +395,6 @@ all rooms will be generated from the template -->
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom nav bar -->
     <com.google.android.material.divider.MaterialDivider
         android:id="@+id/navDivider"
         android:layout_width="0dp"

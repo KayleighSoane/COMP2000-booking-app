@@ -31,6 +31,21 @@
         app:layout_constraintTop_toBottomOf="@id/rtHeaderTitle"
         tools:layout_editor_absoluteY="891dp" />
 
+    <ImageButton
+        android:id="@+id/backbtn"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:background="#74FFFFFF"
+        android:contentDescription="Back button"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerDivider2"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="@color/black" />
+
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -38,34 +53,19 @@
         app:layout_constraintBottom_toTopOf="@id/navDivider2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerDivider2">
+        app:layout_constraintTop_toBottomOf="@id/backbtn"
+        app:layout_constraintWidth_max="800dp">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <ImageButton
-                android:id="@+id/backbtn"
-                android:layout_width="60dp"
-                android:layout_height="48dp"
-                android:layout_margin="5dp"
-                android:background="#74FFFFFF"
-                android:contentDescription="Back button"
-                android:padding="5dp"
-                android:scaleType="fitCenter"
-                app:tint="@color/black"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="?attr/homeAsUpIndicator" />
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="match_parent"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/backbtn"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,7 +74,8 @@
                 android:orientation="vertical"
                 android:paddingTop="20dp"
                 android:paddingBottom="20dp"
-                app:layout_constraintTop_toBottomOf="@id/imageView7"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 tools:layout_constraintTop_toBottomOf="@id/imageView7">
 
                 <TextView

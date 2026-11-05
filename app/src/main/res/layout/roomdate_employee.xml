@@ -33,28 +33,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/rdeHeaderTitle" />
 
+    <ImageButton
+        android:id="@+id/backbut"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_margin="5dp"
+        android:background="#74FFFFFF"
+        android:contentDescription="Back button"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdeHeaderTitle"
+        app:srcCompat="?attr/homeAsUpIndicator"
+        app:tint="@color/black" />
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:gravity="center_horizontal"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@id/navDivider4"
-        app:layout_constraintTop_toBottomOf="@id/headerDivider3">
-
-        <ImageButton
-            android:id="@+id/backbut"
-            android:layout_width="60dp"
-            android:layout_height="48dp"
-            android:layout_margin="5dp"
-            android:background="#74FFFFFF"
-            android:contentDescription="Back button"
-            android:padding="5dp"
-            android:scaleType="fitCenter"
-            app:tint="@color/black"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="?attr/homeAsUpIndicator" />
+        app:layout_constraintTop_toBottomOf="@id/backbut"
+        app:layout_constraintWidth_max="800dp">
 
         <ImageView
             android:id="@+id/imageView9"
