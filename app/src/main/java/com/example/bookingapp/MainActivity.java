@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button btnLogIn = findViewById(R.id.button); // go to RoomMain when button is pressed
         btnLogIn.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, RoomMain.class);
+            Intent intent = new Intent(MainActivity.this, MainRooms.class);
             startActivity(intent);
             finish();
         });

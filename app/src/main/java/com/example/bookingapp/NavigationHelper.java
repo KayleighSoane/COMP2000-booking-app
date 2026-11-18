@@ -4,7 +4,6 @@ import android.content.Intent;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.navigation.NavigationBarView;
-import com.google.android.material.navigation.NavigationView;
 
 public class NavigationHelper {
 
@@ -21,8 +20,8 @@ public class NavigationHelper {
             int id = item.getItemId();
 
             if (id == R.id.rooms) { // if click on room icon
-                if (!(activity instanceof RoomMain)) {
-                    Intent intent = new Intent(activity, RoomMain.class);
+                if (!(activity instanceof MainRooms)) {
+                    Intent intent = new Intent(activity, MainRooms.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP); // Clear roomtemplate and roomdateemployee from stack as subscreens
                     activity.startActivity(intent);                  // So that if nav is pressed when on those screens, they go to roommain
                     activity.overridePendingTransition(0, 0); // No animation

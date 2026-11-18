@@ -22,11 +22,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".RoomMain" android:screenOrientation="portrait" />
-        <activity android:name=".RoomTemplate" android:screenOrientation="portrait" />
-        <activity android:name=".RoomDateEmployee" android:screenOrientation="portrait" />
+        <activity android:name=".MainRooms" android:screenOrientation="portrait" />
+        <activity android:name=".RoomDetails" android:screenOrientation="portrait" />
+        <activity android:name=".BookingTimesEmployee" android:screenOrientation="portrait" />
         <activity android:name=".MyBookings" android:screenOrientation="portrait" />
-        <activity android:name=".ViewBooking" android:screenOrientation="portrait" />
+        <activity android:name=".BookingDetails" android:screenOrientation="portrait" />
 
 
     </application>
@@ -45,8 +45,7 @@
     Calendar in RoomTemplate needs to be functioning to see RoomDate DONE
 
 
-    Bookings in MyBookings need to be functional to access ViewBooking (all point to one?)
-    - create prototype/false booking just to be able to access ViewBooking
+
 
     Can make booking and cancel bottom sheets but might not be functional until database created
 -->

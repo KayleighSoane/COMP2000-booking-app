@@ -9,13 +9,13 @@ public class MyBookings extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.my_bookings);
+        setContentView(R.layout.mybookings);
 
         NavigationHelper.setupBottomNav(this, R.id.bookings);
 
         View booking1 = findViewById(R.id.protobooking);
         booking1.setOnClickListener(v -> {
-            Intent intent = new Intent(MyBookings.this, ViewBooking.class);
+            Intent intent = new Intent(MyBookings.this, BookingDetails.class);
             intent.putExtra("roomImage", R.drawable.room3);
             intent.putExtra("roomName", "Room 3");
             intent.putExtra("roomDate", "Tue 3 November");

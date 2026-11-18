@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 
-public class ViewBooking extends AppCompatActivity {
+public class BookingDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.view_booking);
+        setContentView(R.layout.bookingdetails);
 
         NavigationHelper.setupBottomNav(this, R.id.bookings);
 
@@ -55,8 +55,8 @@ public class ViewBooking extends AppCompatActivity {
     }
 
     private void showCancelBottomSheet(String roomName, String date, String time) {
-        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(ViewBooking.this);
-        View sheetview = getLayoutInflater().inflate(R.layout.cancel_booking_bottomsheet, null); // inflate the bottom sheet
+        BottomSheetDialog bottomSheetDialog = new BottomSheetDialog(BookingDetails.this);
+        View sheetview = getLayoutInflater().inflate(R.layout.cancel_bottomsheet, null); // inflate the bottom sheet
         bottomSheetDialog.setContentView(sheetview);
 
         if (bottomSheetDialog.getWindow() != null) {

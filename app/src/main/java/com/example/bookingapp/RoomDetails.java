@@ -13,12 +13,12 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class RoomTemplate extends AppCompatActivity {
+public class RoomDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.room_template);
+        setContentView(R.layout.roomdetails);
 
         NavigationHelper.setupBottomNav(this, R.id.rooms);
 
@@ -54,7 +54,7 @@ public class RoomTemplate extends AppCompatActivity {
                 SimpleDateFormat formatter = new SimpleDateFormat("EEE d MMMM", Locale.getDefault()); // output date as day, number, month
                 String selectedDate = formatter.format(cal.getTime());
 
-                Intent intent = new Intent(RoomTemplate.this, RoomDateEmployee.class); // go to roomdateemployee
+                Intent intent = new Intent(RoomDetails.this, BookingTimesEmployee.class); // go to roomdateemployee
                 intent.putExtra("roomImage", roomimage);
                 intent.putExtra("selectedDate", selectedDate); // date shows up in roomdateemployee at
                 intent.putExtra("roomName", roomname != null ? roomname : "Room 1"); // ? = if roomname is not null, use it, otherwise use "Room 1"

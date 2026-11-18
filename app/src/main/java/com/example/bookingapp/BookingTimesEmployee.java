@@ -7,11 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class RoomDateEmployee extends AppCompatActivity {
+public class BookingTimesEmployee extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.roomdate_employee);
+        setContentView(R.layout.bookingtimes_employee);
 
         NavigationHelper.setupBottomNav(this, R.id.rooms);
 
